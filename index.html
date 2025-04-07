@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shinchan - Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffde7;
+      margin: 30px;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #ffeb3b;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    section {
+      margin: 30px 0;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .character {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .character img {
+      width: 120px;
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    video {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shinchan: Shiro and the Coal Town Game</h1>
+    <h2>Characters | Who's your favorite?</h2>
+  </header>
+
+  <main>
+    <section>
+      <h2>The Characters</h2>
+
+      <div class="character">
+        <img src="assets/character-shinchan.png" alt="Shinchan" />
+        <p><strong>Shinnosuke Nohara (Shinchan)</strong> – The mischievous 5-year-old protagonist known for his hilarious antics and love of choco chips.</p>
+      </div>
+
+      <div class="character">
+        <img src="assets/character-misae.webp" alt="Misae (Mom)" />
+        <p><strong>Misae Nohara (Mom)</strong> – Shinchan’s short-tempered but loving mother, always trying to keep him in line.</p>
+      </div>
+
+      <div class="character">
+        <img src="assets/character-hiroshi.webp" alt="Hiroshi (Dad)" />
+        <p><strong>Hiroshi Nohara (Dad)</strong> – The laid-back father who works at a company and enjoys his evening beer.</p>
+      </div>
+
+      <div class="character">
+        <img src="assets/character-himawari.png" alt="Himawari" />
+        <p><strong>Himawari</strong> – The youngest of the Noharas. Loves shiny objects and brand-name goods.</p>
+      </div>
+
+      <div class="character">
+        <img src="assets/character-shiro.png" alt="Shiro the dog" />
+        <p><strong>Shiro</strong> – The family dog — small, fluffy, and sometimes the most sensible member of the household.</p>
+      </div>
+
+      <div class="character">
+        <img src="assets/character-toru-kazama.webp" alt="Toru Kazama" />
+        <p><strong>Toru Kazama</strong> – The smart and responsible friend of Shinchan, often the voice of reason in the group.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Watch the Trailer</h2>
+      <video controls>
+        <source src="assets/shinchan-and-the-coal-town.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Who's your favorite?</h2>
+      <form>
+        <label for="favorite">Your favorite character:</label>
+        <select id="favorite" name="favorite">
+          <option value="shinchan">Shinchan</option>
+          <option value="misae">Misae</option>
+          <option value="hiroshi">Hiroshi</option>
+          <option value="himawari">Himawari</option>
+          <option value="shiro">Shiro</option>
+          <option value="kazama">Toru Kazama</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="otherCharacter">Character not in the list? Write their name below:</label>
+        <input type="text" id="otherCharacter" name="otherCharacter">
+
+        <label for="reason">Why do you like this character?</label>
+        <textarea id="reason" name="reason" rows="3"></textarea>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="gender">Your Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <label for="dob">Your Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email">
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Programming4</p>
+    <p>Get in touch with us: <a href="mailto:shinchan-lovers@justlearninghtml.com">shinchan-lovers@justlearninghtml.com</a></p>
+  </footer>
+
+</body>
+</html>
